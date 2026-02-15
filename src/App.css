@@ -36,6 +36,14 @@
   background: black;
 }
 
+div {box-sizing: border-box;}
+
+.list {
+  padding-left: 20px;
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
