@@ -32,11 +32,19 @@ function App() {
     d(copy);
   }
 
+  function sortTitle(){
+    let copy = [...postTitle];
+    copy.sort();
+    console.log('sortTitle arr ==>',copy);
+    c(copy);
+  }
+
   return (
     <div className="App">
       <div className={htmlClass}>
         <h4 style={ {color:'hotpink', fontSize:'16px'} }>React-blog</h4>
       </div>
+      <button onClick={() => sortTitle()}>제목 오름차순 정렬</button>
       <div className="list">
         <h4 id={htmlId}>{postTitle[0]} <span onClick={() => clickLikeCnt(0)}>❤️</span>{like[0]}</h4>
         <p>{postDate} 발행</p>
